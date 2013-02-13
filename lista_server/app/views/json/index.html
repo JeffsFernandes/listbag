@@ -1,0 +1,22 @@
+<html>
+	<head>
+ 		<%= javascript_include_tag :rank, "jquery-1.9.1" %>
+		<title>Lista de exercícios</title>
+		<script type="text/javascript">
+			 $(document).ready(function() 
+			 {
+			 	vai();
+	 		 });
+		</script>
+	</head>
+	<body>
+		<div id="lista_id"> Lista 389018 <br/> Lista 1 de Introducao a BD </div>
+		User: <div id="username">jeffs.fernandes</div>
+		<div id="question_1"> Questao 1: O que é normalização?</div>
+		<div id="answer_1">
+			<div id="content_1_1"> - É um conjunto de regras para Banco de Dados
+				<button id="rank_1_1" type="button" onclick='onRank(0,0,$("#username").text())'>Rank!</button>
+			</div>
+		</div>
+	</body>
+</html>
